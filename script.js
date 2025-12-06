@@ -26,3 +26,31 @@ document.getElementById("generateBtn").addEventListener("click", () => {
   li.textContent = numbers.join(", ");
   history.prepend(li);
 });
+function generateLottoNumbers() {
+    const numbers = new Set();
+
+    while (numbers.size < 6) {
+        const num = Math.floor(Math.random() * 45) + 1;
+        numbers.add(num);
+    }
+
+    return Array.from(numbers).sort((a, b) => a - b);
+}
+
+function showLottoNumbers() {
+    const result = document.getElementById("result");
+    const numbers = generateLottoNumbers();
+
+    result.innerHTML = numbers.map(n => `<span class="ball">${n}</span>`).join("");
+
+    addToHistory(numbers);
+}
+
+function addToHistory(numbers) {
+    const history = document.getElementById("history");
+
+    const li = document.createElement("li");
+    li.textContent = `${new Date().toLocaleString()} → ${numbers.join(", ")}`;
+
+    history.prepend(li);
+}
