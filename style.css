@@ -1,0 +1,8 @@
+#result span {
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin: 5px;
+  font-weight: bold;
+  display: inline-block;
+  background: #fce4ec;
+}
