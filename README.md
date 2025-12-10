@@ -75,3 +75,6 @@
 이번 프로젝트를 통해 GitHub의 Issue–Branch–PR–Merge 과정을 실제로 적용해보며 협업의 전체 흐름을 이해할 수 있었습니다.  
 특히 PR 승인을 통한 코드 리뷰 과정과 GitHub Pages 배포 경험은 실전 웹 개발 프로젝트와 매우 유사하여 큰 도움이 되었습니다.  
 작은 기능이지만, 역할 분담과 작업 흐름을 적용해보며 팀 단위 개발이 어떻게 이루어지는지 체감할 수 있는 경험이었습니다.
+
+This project is licensed under the MIT License — see the LICENSE file for details.
+본 프로젝트의 일부 코드는 ChatGPT의 도움을 받아 작성함.
